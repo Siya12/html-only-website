@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./favicon.ico" sizes="32x32">
+    </head>
+    <body>
+        <h1>Registration Page</h1>  
+        <form action="./register.js" method="POST">
+            <fieldset>
+                <legend>Registration Details</legend>
+                <label for="username">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter Name" autocomplete="given-name"><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter Name" autocomplete="family-name"><br>
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" name="birthdate" id="birthdate" autocomplete="bday"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail" autocomplete="email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" minlength="8" maxlength="64" autocomplete="new-password"><br>
+                <label>Gender:<br>
+                    <input type="radio" name="gender" value="male" id="male" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" name="gender" value="other" id="other">
+                    <label for="other">Other</label><br>
+                </label>    
+                <label>Pets:<br>
+                    <input type="checkbox" name="pets" value="cat" id="cat">
+                    <label for="cat">Cat</label><br>
+                    <input type="checkbox" name="pets" value="dog" id="dog">
+                    <label for="dog">Dog</label><br>
+                </label>
+                <label for="wood">Favorite Type of Wood:</label>
+                <select name="wood" id="wood">
+                    <option value="none">None</option>
+                    <option value="pine">Pine</option>
+                    <option value="spruce">Spruce</option>
+                    <option value="larch">Larch</option>
+                    <option value="juniper">Juniper</option>
+                    <option value="aspen">Aspen</option>
+                    <option value="hornbeam">Hornbeam</option>
+                    <option value="birch">Birch</option>
+                    <option value="alder">Alder</option>
+                    <option value="Beech">beech</option>
+                    <option value="oak">Oak</option>
+                    <option value="elm">Elm</option>
+                    <option value="cherry">Cherry</option>
+                    <option value="pear">Pear</option>
+                    <option value="maple">Maple</option>
+                    <option value="linden">Linden</option>
+                    <option value="ash">Ash</option>
+                </select><br>
+                <input type="submit" value="Register">
+                <input type="reset">
+            </fieldset>
+        </form> 
+        <br>
+        <nav>
+            <a href="./index.html">Go back to main page</a>
+        </nav>
+        <br>
+        <hr>
+        <address>
+            <p>Aidan Nemeth</p>
+            <p><a href="mailto:aidannemeth@gmail.com">aidannemeth@gmail.com</a></p>
+        </address>     
+    </body>
+</html>
+
+
